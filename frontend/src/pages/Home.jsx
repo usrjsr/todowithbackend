@@ -2,10 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Context, server } from "../main";
 import { toast } from "react-hot-toast";
-import TodoItem from "../components/Todoitem";
+import TodoItem from "../components/TodoItem";
 import { Navigate } from "react-router-dom";
 
-const Home = () => {git
+const Home = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
